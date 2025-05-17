@@ -11,8 +11,6 @@ namespace OOP_Homework
         static void Main()
         {
             CharArrayWrapper wrapper = new CharArrayWrapper(new char[] { 'a', 'b', 'E', 'д', 'і' });
-            Console.WriteLine(wrapper[0]);
-            Console.WriteLine(wrapper[1]);
             Console.WriteLine($"Кiлькiсть голосних: " + wrapper.VowelCount);
         }
     }
