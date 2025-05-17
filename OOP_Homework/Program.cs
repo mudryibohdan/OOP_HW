@@ -1,10 +1,17 @@
-﻿namespace OOP_Homework
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OOP_Homework
 {
-    internal class Program
+    class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            CharArrayWrapper wrapper = new CharArrayWrapper(new char[] { 'a', 'b', 'E', 'д', 'і' });
+            Console.WriteLine($"Кiлькiсть голосних: " + wrapper.VowelCount);
         }
     }
 }
